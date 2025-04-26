@@ -275,14 +275,18 @@ strong{
   margin: 3px;
 }
 
+.caixa-projetos{
+  display: flex;
+  margin-bottom: 90px;
+}
+
 .title-card{
   font-weight: bold;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
-
 .card-projeto{
+  margin: 20px;
   width: 350px;
   overflow: hidden;
   border: 1px solid lightgray;
@@ -471,6 +475,9 @@ textarea{
   }
   .sobre-caixa{
     margin: 0px 20px;
+  }
+  .caixa-projetos{
+    flex-direction: column;
   }
   .section-contato{
     display: block;
