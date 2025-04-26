@@ -236,7 +236,6 @@ strong{
 
 .text-sobre{
   max-width: 500px;
-  padding: 20px;
   border-radius: 10px;
   text-align: center;
   font-size: 1.5rem;
@@ -448,15 +447,39 @@ textarea{
 }
 
 @media screen and (max-width: 1024px) {
-  
+  strong{
+    font-size: 3rem;
+  }
+  .redes{
+    text-align: center;
+  }
+  .button-home{
+    margin: 30px 30px;
+    width: 50px;
+  }
+  .info-box{
+    flex-direction: column;
+  }
+  .sobre-caixa{
+    margin: 0px 20px;
+  }
   .section-contato{
     display: block;
   }
   .item-contato{
-    margin-left: 0px;
+    margin-left: 100px;
   }
+  .formulario{
+    width: 400px;
+  }
+}
 
-  .info-box{
-    flex-direction: column;
+@media screen and (max-width: 400px){
+  strong{
+    font-size: 3rem;
+  }
+  
+  .formulario{
+    width: 300px;
   }
 }
