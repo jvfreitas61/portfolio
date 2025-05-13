@@ -1,138 +1,140 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
   <title>Portfólio - João Victor</title>
 </head>
+
 <body>
-  
-  <main class="main">
-    <header class="header">
-      <nav>
-        <a href="#home" class="nav-link">Início</a>
-        <a href="#sobre" class="nav-link">Sobre</a>
-        <a href="#projetos" class="nav-link">Projetos</a>
-        <a href="#contato" class="nav-link">Contato</a>
-      </nav>
-    </header>
-    <div id="home" class="home">
-      <div class="capa">
-        <p class="texto-home">Meu nome é <strong class="nome">João Victor</strong><br>
-          <strong>Desenvolvedor Front-End</strong><br>Bem-vindo ao meu portfólio</p>
-      
-        <div class="redes">
-          <a href="https://www.linkedin.com/in/jvfreitas61/" target="_blank"><img src="icons/linkedin-button.png" alt="Ícone do Linkedin" class="button-home"></a>
-          <a href="https://github.com/jvfreitas61"  target="_blank"><img src="icons/github-button.png" alt="Ícone do Github" class="button-home"></a>
-        </div>
+  <header class="header">
+    <nav>
+      <a href="#home" class="nav-link">Início</a>
+      <a href="#sobre" class="nav-link">Sobre</a>
+      <a href="#projetos" class="nav-link">Projetos</a>
+      <a href="#contato" class="nav-link">Contato</a>
+    </nav>
+  </header>
+
+  <section id="home" class="home">
+    <div class="capa">
+      <p class="texto-home">Meu nome é <strong class="destaque negrito">João Victor</strong><br>
+        <strong class="negrito">Desenvolvedor Front-End</strong><br>Bem-vindo ao meu portfólio
+      </p>
+      <div class="redes">
+        <a href="https://www.linkedin.com/in/jvfreitas61/" target="_blank">
+          <img src="icons/linkedin-button.png" alt="Ícone do Linkedin" class="button-home">
+        </a>
+        <a href="https://github.com/jvfreitas61" target="_blank">
+          <img src="icons/github-button.png" alt="Ícone do Github" class="button-home">
+        </a>
       </div>
     </div>
-    
-  </main>
+  </section>
+
   <section id="sobre" class="section  bg-escuro">
     <div class="subtitulo-box">
       <h2 class="subtitulo">Sobre mim</h2>
       <span class="subtitulo-subline"></span>
-    </div>  
-      <div class="info-box">
-        <img src="img/foto.jpg" alt="Foto" class="foto">
-        <div class="sobre-caixa">
+    </div>
 
-          <p class="text-sobre">Meu nome é João Victor, sou Desenvolvedor Front-End formado em Ciências da Computação e experiência de dois anos trabalhando como Técnico de TI.
-            </p>
-            <br>
-            <p class="text-sobre">
-            Há um ano e meio venho me dedicando ao desenvolvimento front-end, com foco na criação de interfaces modernas, responsivas e com alto desempenho.
-          </p>
-        </div>  
-      </div>
-  </section>
-  <section class="section">
-    <div class="subtitulo-box">
-      <h2 class="subtitulo">Conhecimentos</h2>
-      <span class="subtitulo-subline"></span>
+    <div class="sobre-caixa">
+      <p class="texto-sobre">Meu nome é <strong class="destaque">João Victor</strong>, sou <strong class="destaque">Desenvolvedor Front-End</strong> formado em Ciências da Computação e experiência de dois anos trabalhando como Técnico de TI.
+      </p>
+      <br>
+      <p class="texto-sobre">
+        Há um ano e meio venho me dedicando ao desenvolvimento front-end, com foco na criação de <strong class="destaque">interfaces modernas</strong>, <strong class="destaque">responsivas</strong> e com <strong class="destaque">alto desempenho</strong>.
+      </p>
     </div>
-    <div class="tecnologias">
-      <div class="card-tec">
-        <img class="logo" src="logos/html.png" alt="HTML">
-        <span class="title-card">HTML</span>
-      </div>
-      <div class="card-tec">
-        <img class="logo" src="logos/css.png" alt="CSS">
-        <span class="title-card">CSS</span>
-      </div>
-      <div class="card-tec">
-        <img class="logo" src="logos/js.png" alt="JavaScript">
-        <span class="title-card">JavaScript</span>
-      </div>
-      <div class="card-tec">
-        <img class="logo" src="logos/react.png" alt="React">
-        <span class="title-card">React</span>
-      </div>
-      <div class="card-tec">
-        <img class="logo" src="logos/typescript.png" alt="TypeScript">
-        <span class="title-card">TypeScript</span>
-      </div>
-      <div class="card-tec">
-        <img class="logo" src="logos/tailwind.png" alt="Tailwind">
-        <span class="title-card">Tailwind</span>
-      </div>
-      <div class="card-tec">
-        <img class="logo" src="logos/node.png" alt="Node JS">
-        <span class="title-card">Node JS</span>
-      </div>
-      <div class="card-tec">
-        <img class="logo" src="logos/git.png" alt="Git">
-        <span class="title-card">Git</span>
+
+    <div class="info-box">
+      <img src="img/foto.png" alt="Foto" class="foto">
+      <div>
+        <h3>Conhecimentos</h3>
+        <div class="tecnologias">
+          <div class="card-tec">
+            <img class="logo" src="logos/html.png" alt="HTML">
+            <span class="title-card">HTML</span>
+          </div>
+          <div class="card-tec">
+            <img class="logo" src="logos/css.png" alt="CSS">
+            <span class="title-card">CSS</span>
+          </div>
+          <div class="card-tec">
+            <img class="logo" src="logos/js.png" alt="JavaScript">
+            <span class="title-card">JavaScript</span>
+          </div>
+          <div class="card-tec">
+            <img class="logo" src="logos/typescript.png" alt="TypeScript">
+            <span class="title-card">TypeScript</span>
+          </div>
+          <div class="card-tec">
+            <img class="logo" src="logos/react.png" alt="React">
+            <span class="title-card">React</span>
+          </div>
+          <div class="card-tec">
+            <img class="logo" src="logos/tailwind.png" alt="Tailwind">
+            <span class="title-card">Tailwind</span>
+          </div>
+          <div class="card-tec">
+            <img class="logo" src="logos/node.png" alt="Node JS">
+            <span class="title-card">Node JS</span>
+          </div>
+          <div class="card-tec">
+            <img class="logo" src="logos/git.png" alt="Git">
+            <span class="title-card">Git</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-  <section id="projetos" class="section bg-claro">
+
+  <section id="projetos" class="section-fh bg-claro">
     <div class="subtitulo-box">
       <h2 class="subtitulo">Projetos</h2>
       <span class="subtitulo-subline"></span>
     </div>
     <div class="caixa-projetos">
-
-    
-    <div class="card-projeto">
-      <img src="projetos/calcular-imc.png" alt="" class="img-projeto">
-      <div class="descricao-projeto">
-        <div class="header-projeto">
-          <h4 class="titulo-projeto">Calcular IMC</h4>
-          <a class="button-projeto" href="https://github.com/jvfreitas61/calcular-imc" target="_blank">Ver no Github</a>
+      <div class="card-projeto">
+        <img src="projetos/calcular-imc.png" alt="" class="img-projeto">
+        <div class="descricao-projeto">
+          <div class="header-projeto">
+            <h4 class="titulo-projeto">Calcular IMC</h4>
+            <a class="button-projeto" href="https://github.com/jvfreitas61/calcular-imc" target="_blank">Ver no Github</a>
+          </div>
+          <p class="texto-projeto">Um site que calcula o IMC com base na altura e peso informados</p>
+          <div class="detalhes-projeto">
+            <mark>HTML</mark>
+            <mark>CSS</mark>
+            <mark>JavaScript</mark>
+          </div>
         </div>
-        <p class="texto-projeto">Um site que calcula o IMC com base na altura e peso informados</p>
-        <div class="detalhes-projeto">
-          <mark>HTML</mark>
-          <mark>CSS</mark>
-          <mark>JavaScript</mark>
+      </div>
+
+      <div class="card-projeto">
+        <img src="projetos/guia-de-jogos-na-tv.png" alt="" class="img-projeto">
+        <div class="descricao-projeto">
+          <div class="header-projeto">
+            <h4 class="titulo-projeto">Guia de Jogos na TV</h4>
+            <a class="button-projeto" href="https://github.com/jvfreitas61/guia-de-jogos-na-tv-react" target="_blank">Ver no Github</a>
+          </div>
+          <p class="texto-projeto">Um site que informa onde serão transmitidos os jogos para os amantes do futebol</p>
+          <div class="detalhes-projeto">
+            <mark>HTML</mark>
+            <mark>CSS</mark>
+            <mark>JavaScript</mark>
+            <mark>React</mark>
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="card-projeto">
-      <img src="projetos/guia-de-jogos-na-tv.png" alt="" class="img-projeto">
-      <div class="descricao-projeto">
-        <div class="header-projeto">
-          <h4 class="titulo-projeto">Guia de Jogos na TV</h4>
-          <a class="button-projeto" href="https://github.com/jvfreitas61/guia-de-jogos-na-tv-react" target="_blank">Ver no Github</a>
-        </div>
-        <p class="texto-projeto">Um site que informa onde serão transmitidos os jogos para os amantes do futebol</p>
-        <div class="detalhes-projeto">
-          <mark>HTML</mark>
-          <mark>CSS</mark>
-          <mark>JavaScript</mark>
-          <mark>React</mark>
-        </div>
-      </div>
-    </div>
-  </div>
   </section>
+
   <section id="contato" class="section bg-escuro">
     <div class="subtitulo-box">
       <h2 class="subtitulo">Contato</h2>
@@ -182,4 +184,5 @@
 
   </footer>
 </body>
+
 </html>

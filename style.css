@@ -1,3 +1,6 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------
+BASE
+-----------------------------------------------------------------------------------------------------------------------------------------------*/
 *{
   margin: 0;
   padding: 0;
@@ -7,15 +10,11 @@
 html, body{
   scroll-behavior: smooth;
   font-family: "Lato", sans-serif;
-  color: #363636;
 }
 
 :root{
-  --primeira: #02131f;
-  --segunda: rgba(0,0,32,1);
-  --terceira: #02131F;
-  --texto1: #00B896;
-  --texto2: #02131f;
+  --cor1: #363636;
+  --cor2: #00B896;
   --transparente: rgba(255,255,255,0.1);
 }
 
@@ -23,34 +22,33 @@ a{
   text-decoration: none;
 }
 
-.main{
-  /*background-image: url(img/banner.jpg);*/
-
-  /*opacity: 0.4;*/
+h3{
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
+/*-----------------------------------------------------------------------------------------------------------------------------------------------
+HEADER
+-----------------------------------------------------------------------------------------------------------------------------------------------*/
 .header{
+  background-image: linear-gradient(to right, #101010, #131313, #161616, #191919, #1c1c1c, #1c1c1c, #1c1c1c, #1c1c1c, #191919, #161616, #131313, #101010);
   display: flex;
   justify-content: right;
   padding: 1rem 5rem;
-  background-color: #262626;
 }
 
 .nav-link{
-  text-decoration: none;
   color: white;
   font-weight: 500;
   font-size: 1.2rem;
   position: relative;
-}
-
-.nav-link{
   margin-left: 1rem;
 }
 
 .nav-link::after{
   content: '';
-  background-color: #00B896;
+  background-color: var(--cor2);
   width: 0%;
   height: 2px;
   position: absolute;
@@ -63,10 +61,9 @@ a{
   width: 100%;
 }
 
-.background-e{
-  background-image: linear-gradient(to right bottom, #051937, #021831, #02172b, #021525, #02131f);
-}
-
+/*-----------------------------------------------------------------------------------------------------------------------------------------------
+HOME
+-----------------------------------------------------------------------------------------------------------------------------------------------*/
 .home{
   height: 100vh;
   background-image: url(img/banner-escuro.jpg);
@@ -83,81 +80,46 @@ a{
   top: -40px;
 }
 
-.imagem{
-  width: 450px;
-  height: 450px;
-}
-
 .texto-home{
   text-align: right;
   font-size: 1.5rem;
-  /*color: var(--texto2);*/
   color: white;
-  /*position: relative;
-  top: -90px;*/
   font-weight: 100;
 }
 
-strong{
+.negrito{
   font-size: 4.0rem;
   font-weight: 400;
 }
 
-.nome{
-  color: var(--texto1);
+.destaque{
+  color: var(--cor2);
 }
 
 .redes{
   text-align: right;
 }
 
-.botao-redes{
-  background-color: #00B896;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-
-.botao-form:hover{
-  transform: translateY(-4px);
-  box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
-}
-
-.botao-link{
-  background-color: #00B896;
-  height: 40px;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.botao-link:hover{
-  transform: translateY(-10px) scale(1.03);
-}
-
-.icon-home{
-  background-color: #fff;
-  width: 32px;
-  border-radius: 10px;
-  padding: 5px;
-  margin: 20px 10px;
-  transition: transform 0.1s linear;
-}
-
-.icon-home:hover{
-  transform: scale(1.2);
-}
-
 .button-home{
-  filter: invert(1);
+  filter: contrast(0) brightness(100);
   margin: 20px 10px;
-  transition: transform 0.1s linear;
 }
 
 .button-home:hover{
-  transform: scale(1.2);
+  filter: none;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------
+BACKGROUNDS
+-----------------------------------------------------------------------------------------------------------------------------------------------*/
+.bg-escuro{
+  background-image: linear-gradient(to right, #101010, #131313, #161616, #191919, #1c1c1c, #1c1c1c, #1c1c1c, #1c1c1c, #191919, #161616, #131313, #101010);
+  color: white;
+}
+
+.bg-claro{
+  background-color: #f0f0f0;
+  color: var(--cor1);
 }
 
 .section{
@@ -173,19 +135,13 @@ strong{
   flex-direction: column;
 }
 
-.bg-escuro{
-  background-color: #262626;;
-  color: white;
-}
-
-.bg-claro{
-  background-color: #f0f0f0;
-}
-
+/*-----------------------------------------------------------------------------------------------------------------------------------------------
+SUBTITULOS
+-----------------------------------------------------------------------------------------------------------------------------------------------*/
 .subtitulo-box{ 
   display: flex;
   flex-direction: column;
-  margin-bottom: 90px;
+  margin-bottom: 50px;
 }
 
 .subtitulo{
@@ -198,20 +154,15 @@ strong{
 .subtitulo-subline{
   height: 4px;
   width: 100%;
-  background: #00B896;
+  background: var(--cor2);
   display: inline-block;
 }
 
-.sobre-mim{
-  height: 50%;
-  display: flex;
-  justify-content: start;
-  align-items: flex-start;
-  flex-direction: column;
-}
-
+/*-----------------------------------------------------------------------------------------------------------------------------------------------
+SOBRE
+-----------------------------------------------------------------------------------------------------------------------------------------------*/
 .info-box{
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: center;
   gap: 60px;
@@ -219,30 +170,29 @@ strong{
   margin-bottom: 120px;
 }
 
-.foto{
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  border: 4px solid var(--transparente);
-}
-
 .sobre-caixa{
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 16px;
   border: 1px solid var(--transparente);
   backdrop-filter: blur(10px);
   background: rgba(255,255,255,0.05);
+  margin-bottom: 50px;
 }
 
-.text-sobre{
-  max-width: 500px;
+.texto-sobre{
+  max-width: 800px;
   border-radius: 10px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.foto{
+  width: 350px;
+  border-radius: 16px;
+  border: 3px solid var(--transparente);
 }
 
 .tecnologias{
-  padding: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -254,19 +204,14 @@ strong{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border-radius: 50%;
+  border-radius: 16px;
   padding: 10px;
   margin: 15px;
-  background: rgba(255, 255, 255, 0.4);
-  border: 4px solid rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--transparente);
   width: 140px;
   height: 140px;
   overflow: hidden;
-}
-
-.card-hab{
-  display: flex;
-  align-items: center;
 }
 
 .logo{
@@ -275,14 +220,17 @@ strong{
   margin: 3px;
 }
 
-.caixa-projetos{
-  display: flex;
-  margin-bottom: 90px;
-}
-
 .title-card{
   font-weight: bold;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------
+PROJETOS
+-----------------------------------------------------------------------------------------------------------------------------------------------*/
+.caixa-projetos{
+  display: flex;
+  padding: 50px;
 }
 
 .card-projeto{
@@ -310,6 +258,10 @@ strong{
   margin-bottom: 10px;
 }
 
+.titulo-projeto{
+  font-size: 18px;
+}
+
 .button-projeto{
   padding: 3px 10px;
   background-color: lightgreen;
@@ -326,11 +278,6 @@ strong{
 .button-projeto:hover{
   transform: scale(1.04);
   background-color: #5ced73;
-  
-}
-
-.titulo-projeto{
-  font-size: 18px;
   
 }
 
@@ -358,15 +305,12 @@ mark{
   font-weight: 400;
 }
 
+/*----------------------------------------------------------------------------------------------------------------------------------------------
+CONTATO
+-----------------------------------------------------------------------------------------------------------------------------------------------*/
 .section-contato{
   margin-bottom: 90px;
   display: flex;
-}
-
-h3{
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
 }
 
 .dados-contato{
@@ -395,7 +339,7 @@ h3{
 }
 
 .link-contato:hover{
-  color: #00B896;
+  color: var(--cor2);
 }
 
 .formulario{
@@ -404,7 +348,7 @@ h3{
   background: rgba(255,255,255,0.05);
   backdrop-filter: blur(5px);
   padding: 2rem;
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid var(--transparente);
   border-radius: 16px;
 }
 
@@ -418,13 +362,12 @@ h3{
   background: rgba(255,255,255,0.05);
   border-radius: 8px;
   color: white;
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid var(--transparente);
   outline: none;
 }
 
 .campo-form:focus{
-  border-color: #00B896;
-  /*box-shadow: 0 0 10px #00B896;*/
+  border-color: var(--cor2);
 }
 
 textarea{
@@ -446,10 +389,12 @@ textarea{
 }
 
 .bt-form:hover{
-  /*transform: translateY(-4px);*/
   transform: scale(1.01);
 }
 
+/*-----------------------------------------------------------------------------------------------------------------------------------------------
+MEDIA QUERIES
+-----------------------------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 1024px) {
   .header{
     justify-content: center;
@@ -460,7 +405,7 @@ textarea{
     margin-left: 0px;
     margin: 0rem 1rem;
   }
-  strong{
+  .negrito{
     font-size: 3rem;
   }
   .redes{
@@ -474,7 +419,14 @@ textarea{
     flex-direction: column;
   }
   .sobre-caixa{
-    margin: 0px 20px;
+    margin: 0px 50px 50px 50px;
+  }
+  .foto{
+    width: 250px;
+  }
+  .card-tec{
+    width: 100px;
+    height: 100px;
   }
   .caixa-projetos{
     flex-direction: column;
@@ -491,10 +443,9 @@ textarea{
 }
 
 @media screen and (max-width: 400px){
-  strong{
+  .negrito{
     font-size: 3rem;
   }
-  
   .formulario{
     width: 300px;
   }
