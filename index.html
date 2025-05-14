@@ -93,9 +93,10 @@
         </div>
       </div>
     </div>
+    <a href="arquivos/CURRÍCULO DEV - João Victor de Freitas.pdf" class="bt-download" download="CURRÍCULO DEV - João Victor de Freitas.pdf" type="application/pdf">DOWNLOAD CV</a>
   </section>
 
-  <section id="projetos" class="section-fh bg-claro">
+  <section id="projetos" class="section bg-claro">
     <div class="subtitulo-box">
       <h2 class="subtitulo">Projetos</h2>
       <span class="subtitulo-subline"></span>
@@ -169,7 +170,7 @@
       </div>
       <div class="subsection-mensagem">
         <h3>Envie uma mensagem</h3>
-        <form class="formulario" id="formulario">
+        <form class="formulario" id="formulario" onsubmit="enviarWhats(event)">
           <div class="grupo-form">
             <input placeholder="Nome" class="campo-form" id="nome">
           </div>
@@ -184,6 +185,7 @@
   <footer>
 
   </footer>
+  <script src="./main.js"></script>
 </body>
 
 </html>

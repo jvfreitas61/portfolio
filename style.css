@@ -167,7 +167,7 @@ SOBRE
   justify-content: space-between;
   gap: 60px;
   align-items: center;
-  margin-bottom: 120px;
+  margin-bottom: 50px;
 }
 
 .sobre-caixa{
@@ -230,6 +230,21 @@ SOBRE
 .title-card{
   font-weight: bold;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bt-download{
+  color: #fff;
+  font-size: large;
+  padding: 1rem 2rem;
+  border: 2px solid var(--cor2);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+
+.bt-download:hover{
+  background: linear-gradient(45deg, #00B896, #00A487);
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------------
@@ -432,8 +447,14 @@ MEDIA QUERIES
     width: 250px;
   }
   .card-tec{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
+  }
+  .logo{
+    max-width: 50px;
+  }
+  .title-card{
+    font-size: small;
   }
   .caixa-projetos{
     flex-direction: column;
