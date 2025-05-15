@@ -253,19 +253,40 @@ PROJETOS
 .caixa-projetos{
   display: flex;
   padding: 50px;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+.lista-projetos{
+  display: flex;
+  flex-flow: wrap;
+  max-width: 1170px;
 }
 
 .card-projeto{
   margin: 20px;
   width: 350px;
+  max-height: 500px;
   overflow: hidden;
   border: 1px solid lightgray;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
 
+.img-container{
+  overflow: hidden;
+  width: 348px;
+  position: relative;
+}
+
 .img-projeto{
   width: 100%;
-  object-fit: cover;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+.img-projeto:hover{
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 .descricao-projeto{
@@ -325,6 +346,47 @@ mark{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
+}
+
+.modal {
+  display: none; /* Oculta por padrão */
+  position: fixed; /* Fixo na tela */
+  z-index: 1; /* Garante que está acima de outros elementos */
+  left: 0;
+  top: 0;
+  width: 100%; /* Preenche toda a tela */
+  height: 100%; /* Preenche toda a tela */
+  overflow: none; /* Permite rolagem se o conteúdo for maior que a tela */
+  background-color: rgba(0,0,0,0.4); /* Cor de fundo com transparência */
+}
+
+.modal-content {
+  background-color: #fefefe; /* Cor de fundo do modal */
+  margin: 5% auto; /* Posiciona no centro da tela */
+  padding: 0px 10px 10px 10px;
+  border: 1px solid #888; /* Borda do modal */
+  width: 80%; /* Largura do modal */
+  max-width: 1200px; /* Largura máxima do modal */
+}
+
+.modal-img {
+  max-width: 100%; /* Imagem ajusta-se à largura do modal */
+  max-height: 80vh; /* Altura máxima da imagem, ajustada ao viewport */
+  display: block; /* Faz a imagem ocupar toda a largura disponível */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /*----------------------------------------------------------------------------------------------------------------------------------------------
