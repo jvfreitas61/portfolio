@@ -7,7 +7,8 @@ function enviarWhats(event) {
   const texto = `Olá, me chamo ${nome}. ${mensagem}`;
   const msgFormatada = encodeURIComponent(texto);
 
-  const url = `https://whatsa.me/${telefone}/?t=${msgFormatada}`;
+  const url1 = `https://whatsa.me/${telefone}/?t=${msgFormatada}`;
+  const url = `https://api.whatsapp.com/send/?phone=${telefone}&text=${msgFormatada}&type=phone_number&app_absent=0`
 
   window.open(url, '_blank');
 }
