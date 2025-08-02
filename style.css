@@ -265,11 +265,12 @@ PROJETOS
 }
 
 .lista-projetos{
-  display: flex;
-  flex-flow: wrap;
+  display: grid;
+  /*flex-flow: wrap;*/
+  grid-template-columns: 1fr 1fr 1fr;
   max-width: 1150px;
   width: 100%;
-  gap: 50px;
+  gap: 18px;
   padding: 0 2rem 2rem 2rem;
 }
 
@@ -295,7 +296,7 @@ PROJETOS
 }
 
 .img-projeto:hover{
-  cursor: pointer;
+  
   transform: scale(1.2);
 }
 
@@ -315,25 +316,6 @@ PROJETOS
   font-size: 18px;
 }
 
-.button-projeto{
-  padding: 3px 10px;
-  background-color: lightgreen;
-  color: #008631;
-  border-radius: 4px;
-  border: none;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  cursor: pointer;
-  transition: all 0.1s linear;
-}
-
-.button-projeto:hover{
-  transform: scale(1.04);
-  background-color: #5ced73;
-  
-}
-
 .texto-projeto{
   font-size: 15px;
   color: rgb(153, 153, 153);
@@ -341,7 +323,7 @@ PROJETOS
 }
 
 .detalhes-projeto{
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
   flex-flow: wrap;
   gap: 5px;
@@ -356,6 +338,42 @@ mark{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
+}
+
+.links-projeto{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.bt-projeto{
+  padding: 6px 10px;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.1);
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.bt-projeto:hover{
+  transform: scale(1.02);
+}
+
+.bt-proj-dark{
+  background-image: linear-gradient(to right, #101010, #131313, #161616, #191919, #1c1c1c, #1c1c1c, #1c1c1c, #1c1c1c, #191919, #161616, #131313, #101010);
+}
+
+.bt-proj-dark:hover{
+  background: linear-gradient(45deg, #00B896, #00A487);
+}
+
+.bt-proj-light{
+  background: linear-gradient(45deg, #00B896, #00A487);
 }
 
 .modal {
@@ -549,6 +567,11 @@ MEDIA QUERIES
   }
   .caixa-projetos{
     flex-direction: column;
+  }
+
+  .lista-projetos{
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
   .section-contato{
     display: block;
